@@ -1,8 +1,10 @@
 count = 0
 x = list()
-while input() != "-1":
-    x.append(int(input()))
-    if int(input()) <= 30:
+while True:
+    i = int(input())
+    if i == -1:
+        break
+    if i > 30:
         count += 1
     
 
